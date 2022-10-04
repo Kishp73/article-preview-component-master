@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/style.css">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="wrap_container">
+
+    <div class="drawers_container">
+      
+      <img class="drawers_img" src="images/drawers.jpg" style="display: block; width: 100%; height: 100%;" alt="image-draw-drawers">
+
+    </div>
+
+    <div class="allcontent_container">
+
+      <article class="content_container">
+
+        <h1 class="title_style">
+        Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home
+        </h1>
+        
+        <p class="paragraph_style">
+        Ever been in a room and felt like <br> something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+        </p>
+
+      </article>
+
+      <div id="social_media_container" class="social_media_container">
+
+        <div id="profile_container" class="profile_container">
+
+          <img class="avatar_img" src="images/avatar-michelle.jpg" alt="profile-michelle">
+
+          <h2 class="name_style">Michelle Appleton</h2>
+          <h3 class="datejoin_style">28 Jun 2020</h3>
+
+        </div>
+        
+        <div id="share_container" class="share_container" style="display: none;">
+
+          <span class="share_style">SHARE</span>
+          
+          <div class="icon_medi_container">
+            <i><img src="images/icon-facebook.svg" alt=""></i>
+            <i class="icon_middle"><img src="images/icon-twitter.svg" alt=""></i>
+            <i><img src="images/icon-pinterest.svg" alt=""></i>
+            <div class="triangle"></div>
+          </div>
+          
+
+        </div>
+
+        <button id="share_display" type="button" class="icon_for_share"><img class="icon_share" src="images/icon-share.svg" style="display: block;" alt="icon-share"></button type="button">
+        
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+    <div class="attribution" style="display: none;">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+  </footer>
+
+  <script src="src/main.js"></script>
+</body>
+</html>

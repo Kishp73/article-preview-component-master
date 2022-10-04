@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+/* font-family: 'Manrope', sans-serif; */
+
+:root{
+
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --white: rgb(255, 255, 255);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    font-size: 13px;
+}
+
+body{
+
+    min-width: 100%;
+    min-height: 100vh;
+    max-height: none;
+
+    background-color: var(--Light-Grayish-Blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.wrap_container{
+
+    width: 330px;
+    height: 510px;
+
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background-color: var(--white);
+
+}
+
+.drawers_container{
+
+    width: 330px;
+    height: 200px;
+
+}
+
+.content_container{
+    padding: 40px 30px 0;
+    margin-bottom: 35px;
+    margin-right: 10px;
+}
+
+.title_style{
+
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+
+}
+
+.paragraph_style{
+
+    margin-top: 18px;
+
+    color: var(--Desaturated-Dark-Blue);
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+
+}
+
+.name_style{
+
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+
+}
+
+.datejoin_style{
+    color: var(--Grayish-Blue);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.profile_container{
+
+    display: grid;
+    grid-template-areas: 
+    "image name_profile"
+    "image date";
+    
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.avatar_img{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: block;
+    grid-area: image;
+
+}
+
+.name_style{
+
+    grid-area: name_profile;
+    margin-left: 20px;
+
+}
+
+.datejoin_style{
+
+    grid-area: date;
+    margin-left: 20px;
+
+}
+
+.icon_for_share{
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--Light-Grayish-Blue);
+
+    position: relative;
+
+}
+
+.icon_for_share:hover{
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
+.icon_for_share:hover .icon_share{
+    filter: sepia();
+}
+
+.icon_share{
+    
+    /* fill: var(--Light-Grayish-Blue); */
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.social_media_container{
+
+    width: 100%;
+    height: 70px;
+    padding: 0 25px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.share_container{
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.share_style{
+    
+    color: var(--Grayish-Blue);
+
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+
+    margin-right: 20px;
+
+}
+
+i:hover{
+    animation: shake 0.8s;
+    
+}
+
+@keyframes shake {
+    0%{transform: rotate(30deg);}
+    25%{transform: rotate(-30deg);}
+    50%{transform: rotate(30deg);}
+    100%{transform: rotate(-30deg);}
+}
+
+.icon_medi_container{
+
+    display: flex;   
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.icon_middle{
+    margin: 0 20px 0;
+}
+
+@media (min-width: 600px){
+
+    .wrap_container{
+        display: flex;
+        flex-direction: row;
+        min-width: 500px;
+        width: 740px;
+        height: 280px;
+    }
+
+    .drawers_container{
+        max-width: 290px;
+        height: 100%;
+        
+    }
+
+    .allcontent_container{
+        width: 440px;
+        
+    }
+
+    .content_container{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    br{
+        display: none;
+    }
+
+    .social_media_container{
+        position: relative;
+    }
+
+    .mobile{
+
+        background-color: var(--Very-Dark-Grayish-Blue); 
+
+        position: absolute;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        border-radius: 15px;
+        width:250px; 
+        height:60px;
+        padding: 0 38px 0;
+
+        top: -52px;
+        left: 200px;
+
+        
+    }
+
+    .triangle{
+        
+        position: absolute;
+        width: 0; 
+        height: 0; 
+        border-left: 15px solid var(--Very-Dark-Grayish-Blue);
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent; 
+        transform: rotate(90deg);
+        left:192px;
+        top: 55px;
+    }
+
+}
+
